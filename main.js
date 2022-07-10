@@ -3,7 +3,7 @@ function generateLotto(lotto){
         var generatedResults = [];
         for (let i = 1; i <= lotto; i++) {
             var randomNumber = Math.floor(Math.random() * lotto + 1);
-            if(generatedResults.indexOf(randomNumber) === -1 && generatedResults.length <= 6){
+            if(generatedResults.indexOf(randomNumber) === -1 && generatedResults.length <= 5){
                 generatedResults.push(randomNumber === 0 ? randomNumber + 1 : randomNumber);
             }
         }
